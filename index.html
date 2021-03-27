@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/0dc566ffaa.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="item1">
+        <div class="logo">
+          <i
+            class="fab fa-audible fa-2x"
+            style="
+              color: white;
+              background-color: hsl(228, 56%, 30%);
+              padding-right: -5px;
+            "
+          ></i>
+          <h1>Fylo</h1>
+        </div>
+        <div class="socials">
+          <i class="fas fa-file fa-lg"></i><i class="fas fa-folder fa-lg"></i
+          ><i class="fas fa-file-download fa-lg"></i>
+        </div>
+      </div>
+
+      <div class="item2">
+        <p id="storage">You’ve used <strong>815 GB</strong> of your storage</p>
+        <br />
+        <div class="barre"><div id="grad1">.</div></div>
+        <div class="tooltip">
+          <span class="tooltiptext"><strong>185</strong> GB LEFT</span>
+        </div>
+        <div id="valeursbarre">
+          <p id="zero" style="font-size: 10px; margin-left: 25px">0 GB</p>
+          <p id="mille" style="font-size: 10px; margin-left: 370px">1000 GB</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Marie Flores</a>.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+body {
+  background-color: hsl(229, 57%, 11%);
+  background-image: url(images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: 100%;
+  position: relative;
+  width: 100%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: visible;
+  width: 150px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 15px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: 60px;
+  margin-bottom: 60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  margin-left: -20px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+.tooltip strong {
+  font-size: 30px;
+}
+.tooltip span {
+  font-size: 10px;
+  color: hsl(229, 7%, 55%);
+}
+.item1,
+.item2 {
+  margin: 20px;
+}
+
+.item1 {
+  background-color: hsl(228, 56%, 30%);
+  border-radius: 7px 50px 7px 7px;
+  padding: 10px;
+  width: 250px;
+}
+.item2 {
+  background-color: hsl(228, 56%, 30%);
+  border-radius: 7px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 40%;
+  margin-bottom: -10px;
+}
+.item2 p {
+  font-weight: lighter;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+h1,
+p {
+  color: white;
+}
+
+.socials {
+  display: inline-flex;
+
+  margin-right: 50%;
+  padding: 5px;
+}
+i {
+  background-color: hsl(229, 57%, 11%);
+  color: hsl(243, 100%, 83%);
+
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+progress {
+  width: 100%;
+  padding: 15px;
+  margin-top: -20px;
+  margin-bottom: -5px;
+  color: aqua;
+}
+#valeursbarre {
+  display: inline-flex;
+}
+
+.barre {
+  border-radius: 10px;
+  background-color: hsl(228, 56%, 16%);
+  width: 90%;
+  margin-left: 20px;
+}
+
+#grad1 {
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  border-radius: 10px;
+  height: 95%;
+  width: 75%;
+  border: 2px solid hsl(228, 56%, 16%);
+  color: hsl(6, 100%, 80%);
+}
+
+#storage {
+  margin-left: 20px;
+}
+.logo {
+  display: inline-flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  body {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(images/bg-mobile.png);
+  }
+  .tooltip .tooltiptext {
+    visibility: visible;
+    width: 150px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: 30px;
+    margin-bottom: -80px;
+  }
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 90%;
+    margin-left: -20px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+}
